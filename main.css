@@ -1,0 +1,709 @@
+html, body, #app{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+.white-mode{
+  --background-default: #fff;
+  --text-color: #000;
+}
+.dark-mode{
+  --background-default: #36393f;
+  --text-color: #fff;
+}
+
+body{
+  background: var(--background-default);
+  color: var(--text-color);
+}
+
+.flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.align-items--center, .flex--align-center {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+
+.custom-button{
+  position: relative;
+  overflow: hidden;
+  transition: background 400ms;
+  color: #fff;
+  /*background-color: #6200ee;*/
+  background-color: red;
+  padding: 1rem 2rem;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  outline: 0;
+  border: 0;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.custom-button-transparent{
+  background-color: transparent;
+  box-shadow: unset;
+}
+
+.container{
+  display: flex;
+  padding: 16px;
+  flex-wrap: wrap;
+}
+
+.content-container{
+  min-width: 400px;
+  min-height: 80px;
+  border: 1px solid lime;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 4px;
+  margin-bottom: 4px;
+}
+
+
+  /* //////////////////////// TOOLTIPS   TOOLTIPS      TOOLTIPS      TOOLTIPS ////////////////*/
+
+.custom_tooltip-text {
+    cursor: default;
+    background-color: rgba(28, 28, 28, 0.9);
+    border-radius: 2px;
+    padding: 5px 9px;
+    font-size: 12px;
+    color: #fff;
+    max-width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 150px;
+
+/*    opacity: 0;
+    animation-delay: var(--paper-tooltip-delay-in, 1ms);
+    animation-name: keyFrameFadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: var(--paper-tooltip-duration-in, 150ms);
+    animation-fill-mode: forwards;
+*/  
+}
+
+/*  @keyframes keyFrameFadeInOpacity{
+    0%{
+      opacity: 0%;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+*/  
+  .custom_tooltip-warning {
+    background-color: crimson !important;
+  }
+  
+  .custom_tooltip-light {
+    background-color: #616161;
+    opacity: 0.7;
+  }
+  
+  .tooltip_position {
+    display: none;
+    position: absolute;
+    transform: translate(-50%, 50%);
+    z-index: 10000000000000000;
+    top: 100%;
+    outline: none !important;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  
+  .tooltip_position div {
+    white-space: nowrap;
+    background: #616161;
+    padding: 2px;
+    border-radius: 2px;
+    color: #fff;
+  }
+  
+/*  .has_tooltip2:hover .tooltip_position {
+    display: block;
+  }
+*/  
+  /* ////////////////////////////// TOOLTIPS   TOOLTIPS      TOOLTIPS      TOOLTIPS ////////////////*/
+
+
+
+
+
+
+/* //////////////////////////////// RIPPLE   RIPPLE   RIPPLE   RIPPLE    RIPPLE   RIPPLE////////////////*/
+
+span.permanent-ripple, span.ripple{
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0);
+  background: rgba(255, 255, 255, 0.3);
+}
+
+span.ripple{
+  animation: ripple 700ms linear;
+}
+span.permanent-ripple{
+  animation: ripplePermanent 900ms forwards;
+}
+
+@keyframes ripple{
+  to{
+    transform: scale(4);
+    opacity: 0.5;
+  }
+}
+
+@keyframes ripplePermanent{
+  to{
+    transform: scale(4);
+    /*opacity: (0.5);*/
+  }
+}
+
+
+
+
+
+
+/*======================================================   YT LOADER SPINNER =====================================================*/
+
+tp-yt-paper-spinner {
+  display: inline-block;
+  position: relative;
+  width: 28px;
+  height: 28px;
+  --paper-spinner-container-rotation-duration: 1568ms;
+  --paper-spinner-expand-contract-duration: 1333ms;
+  --paper-spinner-full-cycle-duration: 5332ms;
+  --paper-spinner-cooldown-duration: 400ms;
+}
+
+#spinnerContainer.tp-yt-paper-spinner {
+  width: 100%;
+  height: 100%;
+  direction: ltr;
+}
+
+#spinnerContainer.active.tp-yt-paper-spinner {
+  -webkit-animation: container-rotate var(--paper-spinner-container-rotation-duration) linear infinite;
+  animation: container-rotate var(--paper-spinner-container-rotation-duration) linear infinite;
+}
+
+@-webkit-keyframes container-rotate {
+to {
+  -webkit-transform: rotate(360deg);
+}
+
+}
+
+@keyframes container-rotate {
+to {
+  transform: rotate(360deg);
+}
+
+}
+
+.spinner-layer.tp-yt-paper-spinner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  white-space: nowrap;
+  color: var(--paper-spinner-color, #4285f4);
+}
+
+.layer-1.tp-yt-paper-spinner {
+  color: var(--paper-spinner-layer-1-color, #4285f4);
+}
+
+.layer-2.tp-yt-paper-spinner {
+  color: var(--paper-spinner-layer-2-color, #db4437);
+}
+
+.layer-3.tp-yt-paper-spinner {
+  color: var(--paper-spinner-layer-3-color, #f4b400);
+}
+
+.layer-4.tp-yt-paper-spinner {
+  color: var(--paper-spinner-layer-4-color, #0f9d58);
+}
+
+.active.tp-yt-paper-spinner .spinner-layer.tp-yt-paper-spinner {
+   display: flex;
+  -webkit-animation-name: fill-unfill-rotate;
+  -webkit-animation-duration: var(--paper-spinner-full-cycle-duration);
+  -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-animation-iteration-count: infinite;
+  animation-name: fill-unfill-rotate;
+  animation-duration: var(--paper-spinner-full-cycle-duration);
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  animation-iteration-count: infinite;
+  opacity: 1;
+}
+
+.active.tp-yt-paper-spinner .spinner-layer.layer-1.tp-yt-paper-spinner {
+  -webkit-animation-name: fill-unfill-rotate, layer-1-fade-in-out;
+  animation-name: fill-unfill-rotate, layer-1-fade-in-out;
+}
+
+.active.tp-yt-paper-spinner .spinner-layer.layer-2.tp-yt-paper-spinner {
+  -webkit-animation-name: fill-unfill-rotate, layer-2-fade-in-out;
+  animation-name: fill-unfill-rotate, layer-2-fade-in-out;
+}
+
+.active.tp-yt-paper-spinner .spinner-layer.layer-3.tp-yt-paper-spinner {
+  -webkit-animation-name: fill-unfill-rotate, layer-3-fade-in-out;
+  animation-name: fill-unfill-rotate, layer-3-fade-in-out;
+}
+
+.active.tp-yt-paper-spinner .spinner-layer.layer-4.tp-yt-paper-spinner {
+  -webkit-animation-name: fill-unfill-rotate, layer-4-fade-in-out;
+  animation-name: fill-unfill-rotate, layer-4-fade-in-out;
+}
+
+@-webkit-keyframes fill-unfill-rotate {
+12.5% {
+  -webkit-transform: rotate(135deg);
+}
+
+25% {
+  -webkit-transform: rotate(270deg);
+}
+
+37.5% {
+  -webkit-transform: rotate(405deg);
+}
+
+50% {
+  -webkit-transform: rotate(540deg);
+}
+
+62.5% {
+  -webkit-transform: rotate(675deg);
+}
+
+75% {
+  -webkit-transform: rotate(810deg);
+}
+
+87.5% {
+  -webkit-transform: rotate(945deg);
+}
+
+to {
+  -webkit-transform: rotate(1080deg);
+}
+
+}
+
+@keyframes fill-unfill-rotate {
+12.5% {
+  transform: rotate(135deg);
+}
+
+25% {
+  transform: rotate(270deg);
+}
+
+37.5% {
+  transform: rotate(405deg);
+}
+
+50% {
+  transform: rotate(540deg);
+}
+
+62.5% {
+  transform: rotate(675deg);
+}
+
+75% {
+  transform: rotate(810deg);
+}
+
+87.5% {
+  transform: rotate(945deg);
+}
+
+to {
+  transform: rotate(1080deg);
+}
+
+}
+
+@-webkit-keyframes layer-1-fade-in-out {
+0% {
+  opacity: 1;
+}
+
+25% {
+  opacity: 1;
+}
+
+26% {
+  opacity: 0;
+}
+
+89% {
+  opacity: 0;
+}
+
+90% {
+  opacity: 1;
+}
+
+to {
+  opacity: 1;
+}
+
+}
+
+@keyframes layer-1-fade-in-out {
+0% {
+  opacity: 1;
+}
+
+25% {
+  opacity: 1;
+}
+
+26% {
+  opacity: 0;
+}
+
+89% {
+  opacity: 0;
+}
+
+90% {
+  opacity: 1;
+}
+
+to {
+  opacity: 1;
+}
+
+}
+
+@-webkit-keyframes layer-2-fade-in-out {
+0% {
+  opacity: 0;
+}
+
+15% {
+  opacity: 0;
+}
+
+25% {
+  opacity: 1;
+}
+
+50% {
+  opacity: 1;
+}
+
+51% {
+  opacity: 0;
+}
+
+to {
+  opacity: 0;
+}
+
+}
+
+@keyframes layer-2-fade-in-out {
+0% {
+  opacity: 0;
+}
+
+15% {
+  opacity: 0;
+}
+
+25% {
+  opacity: 1;
+}
+
+50% {
+  opacity: 1;
+}
+
+51% {
+  opacity: 0;
+}
+
+to {
+  opacity: 0;
+}
+
+}
+
+@-webkit-keyframes layer-3-fade-in-out {
+0% {
+  opacity: 0;
+}
+
+40% {
+  opacity: 0;
+}
+
+50% {
+  opacity: 1;
+}
+
+75% {
+  opacity: 1;
+}
+
+76% {
+  opacity: 0;
+}
+
+to {
+  opacity: 0;
+}
+
+}
+
+@keyframes layer-3-fade-in-out {
+0% {
+  opacity: 0;
+}
+
+40% {
+  opacity: 0;
+}
+
+50% {
+  opacity: 1;
+}
+
+75% {
+  opacity: 1;
+}
+
+76% {
+  opacity: 0;
+}
+
+to {
+  opacity: 0;
+}
+
+}
+
+@-webkit-keyframes layer-4-fade-in-out {
+0% {
+  opacity: 0;
+}
+
+65% {
+  opacity: 0;
+}
+
+75% {
+  opacity: 1;
+}
+
+90% {
+  opacity: 1;
+}
+
+to {
+  opacity: 0;
+}
+
+}
+
+@keyframes layer-4-fade-in-out {
+0% {
+  opacity: 0;
+}
+
+65% {
+  opacity: 0;
+}
+
+75% {
+  opacity: 1;
+}
+
+90% {
+  opacity: 1;
+}
+
+to {
+  opacity: 0;
+}
+
+}
+
+.circle-clipper.tp-yt-paper-spinner {
+  display: inline-block;
+  position: relative;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.spinner-layer.tp-yt-paper-spinner::after {
+  content: "";
+  left: 45%;
+  width: 10%;
+  border-top-style: solid;
+}
+
+.spinner-layer.tp-yt-paper-spinner::after,.circle-clipper.tp-yt-paper-spinner .circle.tp-yt-paper-spinner {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  border-width: var(--paper-spinner-stroke-width, 4px);
+  border-radius: 50%;
+}
+
+.circle-clipper.tp-yt-paper-spinner .circle.tp-yt-paper-spinner {
+  bottom: 0;
+  width: 200%;
+  border-style: solid;
+  border-bottom-color: transparent !important;
+}
+
+.circle-clipper.left.tp-yt-paper-spinner .circle.tp-yt-paper-spinner {
+  left: 0;
+  border-right-color: transparent !important;
+  -webkit-transform: rotate(129deg);
+  transform: rotate(129deg);
+}
+
+.circle-clipper.right.tp-yt-paper-spinner .circle.tp-yt-paper-spinner {
+  left: -100%;
+  border-left-color: transparent !important;
+  -webkit-transform: rotate(-129deg);
+  transform: rotate(-129deg);
+}
+
+.active.tp-yt-paper-spinner .gap-patch.tp-yt-paper-spinner::after,.active.tp-yt-paper-spinner .circle-clipper.tp-yt-paper-spinner .circle.tp-yt-paper-spinner {
+  -webkit-animation-duration: var(--paper-spinner-expand-contract-duration);
+  -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-animation-iteration-count: infinite;
+  animation-duration: var(--paper-spinner-expand-contract-duration);
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  animation-iteration-count: infinite;
+}
+
+.active.tp-yt-paper-spinner .circle-clipper.left.tp-yt-paper-spinner .circle.tp-yt-paper-spinner {
+  -webkit-animation-name: left-spin;
+  animation-name: left-spin;
+}
+
+.active.tp-yt-paper-spinner .circle-clipper.right.tp-yt-paper-spinner .circle.tp-yt-paper-spinner {
+  -webkit-animation-name: right-spin;
+  animation-name: right-spin;
+}
+
+@-webkit-keyframes left-spin {
+0% {
+  -webkit-transform: rotate(130deg);
+}
+
+50% {
+  -webkit-transform: rotate(-5deg);
+}
+
+to {
+  -webkit-transform: rotate(130deg);
+}
+
+}
+
+@keyframes left-spin {
+0% {
+  transform: rotate(130deg);
+}
+
+50% {
+  transform: rotate(-5deg);
+}
+
+to {
+  transform: rotate(130deg);
+}
+
+}
+
+@-webkit-keyframes right-spin {
+0% {
+  -webkit-transform: rotate(-130deg);
+}
+
+50% {
+  -webkit-transform: rotate(5deg);
+}
+
+to {
+  -webkit-transform: rotate(-130deg);
+}
+
+}
+
+@keyframes right-spin {
+0% {
+  transform: rotate(-130deg);
+}
+
+50% {
+  transform: rotate(5deg);
+}
+
+to {
+  transform: rotate(-130deg);
+}
+
+}
+
+#spinnerContainer.cooldown.tp-yt-paper-spinner {
+  -webkit-animation: container-rotate var(--paper-spinner-container-rotation-duration) linear infinite, fade-out var(--paper-spinner-cooldown-duration) cubic-bezier(0.4, 0, 0.2, 1);
+  animation: container-rotate var(--paper-spinner-container-rotation-duration) linear infinite, fade-out var(--paper-spinner-cooldown-duration) cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@-webkit-keyframes fade-out {
+0% {
+  opacity: 1;
+}
+
+to {
+  opacity: 0;
+}
+
+}
+
+@keyframes fade-out {
+0% {
+  opacity: 1;
+}
+
+to {
+  opacity: 0;
+}
+
+}
