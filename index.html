@@ -2,6 +2,7 @@
 <html class="dark-mode">
 <head>
 	<title>testy</title>
+	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 	<style type="text/css">
@@ -46,6 +47,52 @@
 		}
 
 
+		.grid-skinbid-display{
+			display: grid;
+		    gap: 8px;
+		    grid-template-columns: repeat(auto-fit,minmax(252px,1fr));
+		}
+
+		.vue-default-dark, .vite-default-dark{
+			background-color: #242424;
+		}
+		.vue-logo {
+		  height: 6em;
+		  padding: 1.5em;
+		  will-change: filter;
+		  transition: filter 300ms;
+		}
+		.vue-logo:hover {
+		  filter: drop-shadow(0 0 2em #646cffaa);
+		}
+		.vue-logo.vue:hover {
+		  filter: drop-shadow(0 0 2em #42b883aa);
+		}
+
+
+		.reddit-blue{
+			background: #0a0e33;
+		}
+		.reddit-blue-badge{
+			background: #21276e;
+		}
+		.reddit-blue-ticket{
+			background: #04051d;
+		}
+
+
+		.best-dodger-blue-color{
+			background-color: darkturquoise;
+		}
+
+
+		.best-tooltip-background-color-like-jira{
+			background-color: rgb(23, 43, 77);
+		}
+		
+
+
+		
 
 		.deviant-art-background-dark-blue{
 			background-color: #06070d;
@@ -57,6 +104,16 @@
 		.beekeeper-quit-hover{
 			background: #ff5d59;
 		}
+
+		.yt-settings-menu{
+			background: #282828;
+		}
+
+		.yt-settings-menu-item:hover{
+			background: rgba(255, 255, 255, 0.2);
+		}
+
+
 
 		.yt-transparent-settings-popup{
 			background: rgba(28, 28, 28, .9);
@@ -75,12 +132,37 @@
 			background-color: #cb5c00;
 		}
 
+		.google-search-background-dark{
+			background-color: #1f1f1f;
+		}
+
 		.default-dark-gray{
 			background: #0e0e0e;
 		}
 		.dark-gray{
 			background: #404040;
 		}
+
+
+
+		.prosettings-card{
+			background: #fff;
+		}
+		.prosettings-card-item:hover:after{
+			content: '';
+		    width: calc(100% + 10px);
+		    height: 40px;
+		    position: absolute;
+		    left: -5px;
+		    top: 50%;
+		    transform: translateY(-50%);
+		    background: #F0EFFB;
+		    z-index: -1;
+		    border-radius: 6px;
+		    opacity: 0.5;			 
+		}
+
+
 
 
 		.reddit-card-gray{
@@ -103,6 +185,18 @@
 		.reddit-card-red-button2:hover{
 			background-color: rgba(255,88,91,.12)
 		}
+		.reddit-purple-background-pyrocynical{
+			background-color: #270320;
+		}
+		.reddit-purple-background-pyrocynical-dark{
+			background-color: #160111;
+		}
+		.reddit-purple-background-pyrocynical-badge{
+			background-color: #fdf0f9;
+		}
+		.reddit-purple-background-pyrocynical-text-on-dark{
+			background-color: #f04cd1;
+		}
 
 
 		.dmarket-gray1{
@@ -121,8 +215,34 @@
 		}	
 		.dmarket{
 			--dmarket-green: #5bbd74;
-		}		
+		}	
 
+
+		.movie-website-color-scheme{
+		    --primary: #e50914 !important;
+		    --secondary: #0f0f0f;
+		    --nero: #181818;
+		}
+
+
+		.steam-gradient-green{
+
+			--gradient-right: rgba(1, 19, 1, 1);
+			--gradient-left: rgba(1, 19, 1, 1);
+			--gradient-background: rgba(2, 59, 16, 1);
+
+			background: radial-gradient( farthest-side at bottom right, var(--gradient-right), transparent 500px ), radial-gradient( farthest-corner at bottom left, var(--gradient-left), transparent 600px );
+		    background-color: var(--gradient-background);
+		    background-repeat: no-repeat;
+		    background-position: center;
+		}	
+
+		.steam-gradient-green-badge{
+			border-radius: 3px;
+		    background-color: rgba( 0, 0, 0, 0.3 );
+		    height: 70px;
+		    margin-bottom: 13px;
+		}
 
 		.hellcase-dark-heeader{
 			background-color: #101117;
@@ -149,6 +269,29 @@
 		}
 		.yt-gray-new{
 			background-color: #0f0f0f;
+		}
+		.yt-blue-transparent-playlist-modal{
+			background-color: rgba(7,19,51,0.949);
+		}
+
+
+
+		.yt-spec-button-shape-next--overlay-dark.yt-spec-button-shape-next--tonal {
+		    color: #fff;
+		    background-color: rgba(0, 0, 0, 0.3);
+		}
+		.yt-spec-button-shape-next--overlay-dark.yt-spec-button-shape-next--tonal:hover {
+		    background-color: rgba(40, 40, 40, 0.6);
+		    border-color: transparent;
+		}
+
+		.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--tonal {
+		    color: #f1f1f1;
+		    background-color: rgba(255, 255, 255, 0.1);
+		}
+		.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--tonal:hover {
+		    background-color: rgba(255, 255, 255, 0.2);
+		    border-color: transparent;
 		}
 
 		.imovies-gray1{
@@ -201,6 +344,43 @@
 		}
 		.twitch-pink-team-text{
 			color: #fb47da;
+		}
+
+		.twitch-dark-settings-page-background{
+			background-color: #0e0e10;
+		}
+
+		.twitch-dark-settings-page-background-ticket{
+			background-color: #18181b;
+		}
+
+		.twitch-dark-settings-page-background-ticket-border{
+			background-color: rgba(83,83,95,.48);
+		}
+
+		.twitch-purple-text{
+			color: #a970ff;
+		}
+
+
+		.twitch-dark-ticket-background{
+			background-color: #1f1f23;
+		}
+		.twitch-dark-ticket-text-color{
+			color: #adadb8;
+		}
+		.twitch-dark-ticket-button-background-color{
+			background-color: rgba(83, 83, 95, 0.38);
+		}
+		.twitch-dark-ticket-button-hover-background-color{
+			background-color: #ffaaa8;
+		}
+		
+
+
+
+		.twitter-dim{
+			background-color: #15202B;
 		}
 
 
@@ -260,6 +440,16 @@
 			z-index: 0;
 		}
 
+		.hltv-background{
+			background-color: #2d3844;
+		}
+		.hltv-table-tr:hover{
+			background: linear-gradient(90deg, 
+						rgba(209, 227, 245, 0) 0, 
+						rgba(209, 227, 245, .2) 50%, 
+						rgba(209, 227, 245, 0));
+		}
+
 		.ggdrop-ticket-background{
 			background: radial-gradient(101.95% 157% at 50% -23%,rgba(238,58,101,.4) 0,rgba(207,38,89,.316) 31.63%,rgba(81,17,29,0) 100%),#21222b;
 			/*background: radial-gradient(101.95% 157% at 50% -23%,rgba(130,78,242,.4) 0,rgba(109,39,197,.316) 31.63%,rgba(45,17,81,0) 100%),#21222b;*/
@@ -268,6 +458,9 @@
 
 	</style>
 	<script src="sources/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript">
+		const uznaUI = {};
+	</script>
 	<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
 	<!-- <script type="module" src="main.js"></script> -->
 </head>
@@ -286,7 +479,7 @@
 <div class="container">
 
 
-
+	
 
 
 
@@ -295,6 +488,36 @@
 			<!-- <iframe width="420" height="345" src="https://www.youtube.com/embed/mbogvuaFl3w" title="Age of War meme" frameborder="0" allowfullscreen></iframe> -->
 			<!-- allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" -->
 		<!-- </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1023,6 +1246,231 @@ a {
 }
 
 
+
+
+
+
+
+
+.sub-menu--dropdown {
+    top: 80px;
+}
+
+.sub-menu {
+    display: none;
+    z-index: 1;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    right: 0;
+    background: #fff;
+    -webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.06);
+    -moz-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.06);
+    padding: 40px 20px 75px 80px;
+    -webkit-justify-content: flex-start;
+    -moz-justify-content: flex-start;
+    -ms-justify-content: flex-start;
+    -ms-flex-pack: flex-start;
+    justify-content: flex-start;
+    gap: 40px;
+}
+
+@media only screen and (min-width: 1420px){
+	.sub-menu--dropdown {
+	    padding: 16px !important;
+	    /*padding: 20px !important;*/
+	    right: auto;
+	    left: auto;
+	    margin-left: -30px;
+	    border-radius: 8px;
+	    -webkit-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.06);
+	    -moz-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.06);
+	    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.06);
+	    -webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	    flex-direction: column;
+	    gap: 20px;
+	}
+}
+
+
+.menu-item:hover .sub-menu {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex !important;
+}
+
+
+
+
+.sub-menu:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: -5px;
+    right: 0;
+    background: #fff;
+    height: 10px;
+    display: none;
+}
+
+.menu-item:hover .sub-menu:before {
+    display: block;
+}
+
+
+.sub-menu--dropdown:before {
+    background-color: transparent;
+    top: -10px;
+}
+
+
+.sub-menu .menu {
+    list-style: none;
+    padding: 0;
+	margin: 0;
+}
+
+.sub-menu--dropdown .menu.menu--lists li {
+
+    margin-bottom: 2px;
+    width: 100%;
+    height: 40px;
+
+}
+
+
+.menu-item .linked:hover:after {
+    content: '';
+    width: calc(100% + 10px);
+    height: 40px;
+    position: absolute;
+    left: -5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #F0EFFB;
+    z-index: -1;
+    border-radius: 6px;
+    opacity: 0.5;
+}
+
+.menu-item .linked {
+    position: relative;
+}
+
+.nav-games-logo-wrapper {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 0 10px;
+    width: fit-content;
+}
+
+/*.nav-games-logo-wrapper.has-subtitle .nav-games-logo-title {
+    grid-row: auto;
+}
+*/
+.sub-menu--dropdown .menu li a {
+    font-size: 15px !important;
+    line-height: 22px !important;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+
+
+.nav-games-logo-wrapper .nav-games-logo-title {
+    order: 2;
+    font-size: 14px;
+    color: #132037;
+    -webkit-align-items: flex-end;
+    -webkit-box-align: flex-end;
+    -ms-flex-align: flex-end;
+    align-items: flex-end;
+    grid-row: 1 / span 2;
+}
+
+.nav-games-logo-wrapper .nav-games-logo {
+    grid-row: unset;
+}
+
+.nav-games-logo-wrapper .nav-games-logo {
+    position: relative;
+    background: #F0EFFB;
+    left: auto;
+    right: auto;
+    width: 30px;
+    height: 30px;
+    bottom: auto;
+    order: 1;
+    grid-row: 1 / span 2;
+    padding: 6px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.edge-images-container {
+    width: var(--max-width, 100%);
+    height: var(--max-height, auto);
+    position: relative;
+}
+
+.edge-images-container {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 0;
+    overflow: hidden;
+}
+body .linked {
+    cursor: pointer;
+}
+.edge-images-container:before {
+    content: "";
+    display: block;
+    padding-bottom: calc(100% /(var(--aspect-ratio, 1 / 1)));
+}
+
+.edge-images-container .edge-images-img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+
+.sub-menu--dropdown:after {
+    content: '';
+    position: absolute;
+    left: 45px;
+    top: -14px;
+    width: 0;
+    height: 0;
+    border-left: 14px solid transparent;
+    border-right: 14px solid transparent;
+    border-bottom: 14px solid #fff;
+    display: none;
+}
+
+.menu-item:hover .sub-menu:after {
+    display: block;
+}
+
+
+
 </style>
 
 
@@ -1109,6 +1557,85 @@ a {
          </svg>
          <span class="trn-game-bar-title__label" data-v-b78551d6="">PUBG</span>
       </a>
+
+
+
+
+      <div class="custom-list menu-item">
+     	<div>...</div> 
+
+     	<div class="sub-menu sub-menu--pro-lists sub-menu--dropdown">
+		  <ul class="menu menu--lists">
+		    <li class="card nav-games-logo-wrapper has-subtitle linked" style="">
+		      <a class="nav-games-logo-title js-link-target" href="https://prosettings.net/lists/apex-legends/">Apex</a>
+		      <div class="nav-games-logo">
+		        <picture style="--aspect-ratio:40/40;--max-width:40px;--max-height:40px" class="edge-images-container picture-40x40 fixed cover image-id-109274">
+		          <!-- <img alt="Apex Legends" class="attachment-40x40 size-40x40 edge-images-img edge-images-img--lazy" decoding="async" fetchpriority="low" loading="lazy" src="https://prosettings.net/wp-content/uploads/apex-legends-logo-test.svg" width="40" height="40" sizes="(max-width: 40px) 100vw, 40px"> -->
+	          	<svg class="edge-images-img" xmlns="http://www.w3.org/2000/svg" width="40" height="1280" viewBox="0 0 1280 1280" fill="none">
+					<path d="M640.03 197.28L183.73 974.98L318.53 1082.68L571.83 908.08H425.73L640.03 531.18L854.23 908.08H708.13L961.43 1082.68L1096.23 974.98L640.03 197.28Z" fill="black"/>
+				</svg>
+		        </picture>
+		      </div>
+		    </li>
+		    <li class="card nav-games-logo-wrapper has-subtitle linked">
+		      <a class="nav-games-logo-title js-link-target" href="https://prosettings.net/lists/cs2/">CS2</a>
+		      <div class="nav-games-logo">
+		        <picture style="--aspect-ratio:40/40;--max-width:40px;--max-height:40px" class="edge-images-container picture-40x40 fixed cover image-id-146591">
+		          <!-- <img alt="CS2" class="attachment-40x40 size-40x40 edge-images-img edge-images-img--lazy" decoding="async" fetchpriority="low" loading="lazy" src="https://prosettings.net/wp-content/uploads/cs2-icon-black.svg" width="40" height="40" sizes="(max-width: 40px) 100vw, 40px"> -->
+		          <svg class="edge-images-img" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" width="214.83" height="91.33" viewBox="0 0 214.83 91.33">
+					  <defs>
+					    <style>
+					      .cls-1 {
+					        fill-rule: evenodd;
+					      }
+					    </style>
+					  </defs>
+					  <path class="cls-1" d="m127.59,24.84l.49,2.27c.03.14.16.22.3.19l5.13-1.14c.14-.03.22-.16.19-.3l-1.21-5.11c-.02-.07,0-.14.03-.2l.5-.77c.06-.1.11-.2.14-.31l.6-2.76c.02-.07.08-.12.15-.12l14.19.02c.2,0,.35-.15.35-.35v-2.41s.04-.08.08-.08h5.47c.1,0,.18-.08.18-.18v-1.09c0-.1-.08-.18-.18-.18h-5.47,0s-.08-.03-.08-.07c0-.25,0-1.03.01-1.42v-.2c0-.29-.2-.51-.45-.51-.14,0-.27.08-.36.2-.02.03-.17.25-.35.51-.17.25-.37.54-.52.76-.02.02-.04.04-.07.04h-24.9c-.1,0-.18-.08-.18-.18l-.05-.67c0-.11.1-.2.21-.18l1.27.12c.11,0,.21-.06.24-.17l.93-3.76c.02-.09-.03-.18-.11-.21l-.86-.32s-.09-.06-.1-.11c-.16-.66-1.43-5.04-7.58-6.02-2.99-.48-4.95.8-5.99,1.82-.46.45-.85.98-1.15,1.56l-.37.81c-.03.06-.17.82-.17.89l.19,3.73c0,.13.06.25.16.33l1.35.58-.74,1.23c-.03.09-.11.15-.2.15,0,0-1.59.04-2.37.07-1.47.06-4.73,1.85-7.14,7-2.36,5.05-2.75,5.9-2.75,5.9-.05.1-.15.16-.26.15h-2.2c-.14,0-.28.12-.34.24l-3.41,9.68c-.06.12-.02.31.07.41l2.38,1.49c.07.06.09.14.07.22l-1.24,3.68c-.02.08-.05.16-.09.24l-1.65,1.46s-.08.08-.1.14c-.01.03-.02.06-.03.09l-2.27,5.83c-.03.1-.12.17-.23.17h-1.27c-.32,0-.59.25-.62.57l-.76,8.71c-.02.15-.03.31-.06.46l-.6,3.46c-.02.08-.07.15-.13.21l-2.12,1.62c-.97.93-2.28,2.63-2.91,3.81l-7.07,14.93c-.17.32-.31.86-.3,1.23l.5.9c0,.32-.12,1.73-.27,2.02l-2.37,4.14c-.05.1-.06.22-.01.33l.12.27.35.71h7.19c.45.05.94-.52.95-1.13l.39-4.93-.1-.74,13.71-16.1c.36-.44.84-1.21,1.09-1.72l6.53-14.42c.08-.16.21-.28.38-.33l.41-.13c.25-.08.53,0,.69.2.35.42.98,1.43,1.58,2.38.38.6.74,1.18.99,1.55.54.79,3.23,4.68,4.4,5.96.21.23.73.49,1.18.71.23.11.44.22.59.31.15.09.19.28.11.43l-3.91,6.88-1.73,8.13c-.06.19-.11.38-.14.58l-1.56,5.64c0,.35-.13.62-.27.91-.14.29-.29.59-.31,1.02l-.57,4.12c0,.13.09.23.22.23l9.67.05h0s.68,0,1.08-.03c.08,0,.2-.02.29-.03,1.29-.16,2.17-.34,2.77-.54.03,0,.05-.02.08-.03.42-.15.69-.31.86-.49.33-.34.71-.77.77-1.31v-.06s0-.03,0-.04v-.09h0s0-.07,0-.09c-.01-.11-.04-.19-.07-.26h0s0,0,0,0c0-.01-.01-.03-.02-.04,0,0,0-.01-.01-.02,0-.01-.01-.02-.02-.03-.05-.08-.11-.11-.12-.11-.03-.02-.05-.03-.08-.04l-4.49-1.36c-.29-.09-.54-.27-.72-.51l-1.21-1.78c-.06-.12-.03-.27.07-.37l2.35-2.32c.08-.08.14-.17.18-.27l7.23-17.08c.34-1.08.23-2.3,0-3.59-.14-.8-1.86-3.78-2.8-5.4-.18-.32-.34-.59-.45-.78-.56-1-4.06-7.12-4.89-8.57-.1-.16-.22-.31-.37-.42-.11-.08-.22-.17-.31-.28-.09-.1-.15-.22-.19-.36l-.28-4.25c-.02-.09.04-.19.14-.19l1.26-.11c.12-.01.23-.08.28-.19l4.36-8.2c.06-.11.06-.25,0-.36l-.89-1.11c-.06-.1-.06-.23,0-.33l1.34-1.44c.05-.1.18-.13.28-.08l3.55,2c.22.12.46.19.71.19.98,0,2.61-.59,3.45-1.11.22-.14.41-.33.53-.56l1.74-4.07c.02-.05.1-.04.11.01Z"/>
+					  <polygon class="cls-1" points="53.11 81.58 53.12 81.58 53.11 81.58 53.11 81.58"/>
+					  <path class="cls-1" d="m28.45,40.9l-6.45-3.05h48.85c2,0,3.81-1.2,4.6-3.04l4.12-9.65h-47.44c-7.98,0-15.2,4.75-18.36,12.08L.81,67.67c-2.81,6.59,2.03,13.91,9.2,13.91h42.18c2,0,3.81-1.2,4.59-3.04l4.19-9.82H16.58l11.87-27.83Z"/>
+					  <path class="cls-1" d="m163.48,25.09c-8.03,0-15.27,4.8-18.4,12.18l-2.09,4.94-1.49,3.52c-2.8,6.59,2.04,13.9,9.2,13.9h33.68s-3.85,9.02-3.85,9.02h-45.48c-2,0-3.8,1.19-4.59,3.03l-4.23,9.83h51.35c8.01,0,15.24-4.78,18.39-12.14l3.76-8.81c2.81-6.59-2.02-13.92-9.2-13.92h-33.63l2.47-5.81-6.28-3.05h53.06c2,0,3.82-1.2,4.6-3.04l4.09-9.64h-51.35Z"/>
+					</svg>
+		        </picture>
+		      </div>
+		    </li>
+		    <li class="card nav-games-logo-wrapper has-subtitle linked">
+		      <a class="nav-games-logo-title js-link-target" href="https://prosettings.net/lists/fortnite/">Fortnite</a>
+		      <div class="nav-games-logo">
+		        <picture style="--aspect-ratio:40/40;--max-width:40px;--max-height:40px" class="edge-images-container picture-40x40 fixed cover image-id-109276">
+		          <!-- <img alt="Fortnite" class="attachment-40x40 size-40x40 edge-images-img edge-images-img--lazy" decoding="async" fetchpriority="low" loading="lazy" src="https://prosettings.net/wp-content/uploads/fortnite-logo-test.svg" width="40" height="40" sizes="(max-width: 40px) 100vw, 40px"> -->
+		          <svg class="edge-images-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1281 1281" fill="none">
+					<path d="M1085.68 276.365H833.332L841.386 193.81H441.687V276.365H196.2L223.344 491.843L198.587 989.261L441.389 955.881V1087.91L683.594 1040.22V924.886L1085.38 949.623L1055.55 478.134L1085.68 276.365ZM790.081 409.884H654.661V535.952H773.974V720.435H654.661V1016.38L470.919 1052.44V223.613H809.47L790.081 409.884Z" fill="black"/>
+					</svg>
+		        </picture>
+		      </div>
+		    </li>
+		    <li class="card nav-games-logo-wrapper has-subtitle linked" style="">
+		      <a class="nav-games-logo-title js-link-target" href="https://prosettings.net/lists/league-of-legends/">LoL</a>
+		      <div class="nav-games-logo">
+		        <picture style="--aspect-ratio:40/40;--max-width:40px;--max-height:40px" class="edge-images-container picture-40x40 fixed cover image-id-64948">
+		          <!-- <img alt="League of Legends" class="attachment-40x40 size-40x40 edge-images-img edge-images-img--lazy" decoding="async" fetchpriority="low" loading="lazy" src="https://prosettings.net/wp-content/uploads/league-of-legends-logo.svg" width="40" height="40" sizes="(max-width: 40px) 100vw, 40px"> -->
+		          <svg class="edge-images-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.96 1279.96" data-name="Layer 1" id="Layer_1"><path d="M548.68,939.73H990.12L884.86,1053.58H295.74l84.31-109V302.46l-76.61-82.7H550.83ZM342.61,796.31V543.65a324,324,0,0,0,0,252.66ZM640,347a324.15,324.15,0,0,0-43.77,2.95V898.27H868.48A321.93,321.93,0,0,0,963,670C963,491.59,818.36,347,640,347ZM342.61,467.4a360.27,360.27,0,0,0,0,405.16v51.12a390.49,390.49,0,0,1,0-507.4ZM1030.85,670a389.68,389.68,0,0,1-73.53,228.29H918a359.75,359.75,0,0,0-278-588,363.11,363.11,0,0,0-43.77,2.63V281.53A392.56,392.56,0,0,1,640,279.11,390.58,390.58,0,0,1,1030.85,670Z" fill="black"/></svg>
+		        </picture>
+		      </div>
+		    </li>
+		    <li class="card nav-games-logo-wrapper has-subtitle linked">
+		      <a class="nav-games-logo-title js-link-target" href="https://prosettings.net/lists/valorant/">VALORANT</a>
+		      <div class="nav-games-logo">
+		        <picture style="--aspect-ratio:40/40;--max-width:40px;--max-height:40px" class="edge-images-container picture-40x40 fixed cover image-id-64945">
+		          <!-- <img alt="VALORANT" class="attachment-40x40 size-40x40 edge-images-img edge-images-img--lazy" decoding="async" fetchpriority="low" loading="lazy" src="https://prosettings.net/wp-content/uploads/valorant-logo.svg" width="40" height="40" sizes="(max-width: 40px) 100vw, 40px"> -->
+		          <svg class="edge-images-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279.96 1279.96" data-name="Layer 1" id="Layer_1"><path d="M1093.36,637.8V290.17c0-5.37-6.7-7.6-10.27-3.58L703.28,761.13c-3.13,3.57-.45,9.38,4.47,9.38H982.1a23.49,23.49,0,0,0,18.77-9.38L1087.56,653a23,23,0,0,0,5.8-15.2Zm-888.3,15.64L490.14,1010c4.47,5.8,11.62,8.93,19.21,8.93H783.71c4.91,0,7.59-5.36,4.47-8.93L209.53,287c-3.58-4-10.28-1.79-10.28,3.57V638.25a27.8,27.8,0,0,0,5.81,15.19Z"/></svg>
+		        </picture>
+		      </div>
+		    </li>
+		  </ul>
+		</div>
+
+     </div>
+
+
+
+
+
       <div data-v-b78551d6="" class="trn-game-bar-more-games">
          <div data-v-b78551d6="" class="trn-game-bar-more-games__label">More Games</div>
          <!-- <div data-v-b78551d6="" class="trn-game-bar-more-games__container">
@@ -1543,6 +2070,7 @@ a {
                </div>
             </div>
          </li>
+         
       </ul>
       <div class="main-nav-account" data-v-8368e912="" data-v-0c6e2608="">
          <!----><!---->
@@ -1632,6 +2160,537 @@ a {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="content-container">
+
+<style type="text/css">
+.ui-select-container{
+	width: 200px;
+	height: 50px;
+	display: flex;
+	border-radius: 8px;
+	border: 1px solid #ccc;
+	background-color: #161616;
+	position: relative;
+}
+
+.ui-select-clickable{
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+}
+
+.ui-select-dropdown{
+	display: none;
+	position: absolute;
+	top: 104%;
+	width: 100%;
+
+	padding: 8px 8px;
+    background: #1e1e1e;
+    border-radius: 8px;
+}
+.ui-select-dropdown-open > .ui-select-dropdown{
+	display: block;
+}
+
+
+.ui-select-icon-container{
+	width: 40px;
+	height: 40px;
+	right: 0px;
+	position: absolute;
+	top: 4px;
+}
+.ui-select-dropdown-open .ui-select-icon-container{
+	transform: rotate(180deg);
+}
+
+.ui-select-dropdown-item{
+	cursor: pointer;
+	padding: 10px 24px;
+	border-radius: 4px;
+	margin-bottom: 2px;
+}
+.ui-select-dropdown-item:hover{
+	background-color: #313131;
+}
+
+
+</style>
+	
+
+
+<div>
+	<div id="custom-select"></div>
+</div>
+
+
+
+<script type="text/javascript">
+
+
+uznaUI.select = (function(){
+
+const svgCollection = {
+    [`close`]:  `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <g>
+            <path id="Vector" d="M18 18L12 12M12 12L6 6M12 12L18 6M12 12L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+    </svg>`,
+    [`down-arrow`]: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+        <path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>`
+};
+
+function customSelect(selector, items, settings = {}){
+	let _this = this;
+	let mount = document.querySelector(selector);
+
+	let itemChunkSize = settings.chunk || 10;
+
+	this.dropdownOpen = false;
+	
+
+	mount.innerHTML += `<div class="ui-select-container">
+		<div class="ui-select-clickable">
+			<div class="ui-select-value-container"></div>
+
+			<div class="ui-select-icon-container">
+				${svgCollection['down-arrow']}
+			</div>
+			
+		</div>
+		<div class="ui-select-dropdown">
+			${_this.createItems(items)}
+		</div>
+	</div>`;
+
+	this.containerElement = mount.querySelector('.ui-select-container');
+	this.dropdownElement = mount.querySelector('.ui-select-dropdown');
+	this.clickableElement = mount.querySelector('.ui-select-clickable');
+
+
+	this.clickableElement.addEventListener('click', function(){
+		_this.toggleDropdown();
+	})
+}
+
+
+
+customSelect.prototype.createItems = function(items){
+	let mount = '';
+	for(let i = 0; i < items.length; i++){
+		let item = items[i];
+		console.log('item', item);
+
+		mount += `<div class="ui-select-dropdown-item" data-val="${item.value}">${item.text}</div>`;
+	}
+
+	return mount;
+}
+
+customSelect.prototype.toggleDropdown = function(items){
+	if(this.dropdownOpen){
+		this.dropdownOpen = false;
+		this.containerElement.classList.remove('ui-select-dropdown-open')
+	}else{
+		this.dropdownOpen = true;
+		this.containerElement.classList.add('ui-select-dropdown-open')
+	}
+}
+
+
+
+return {
+	customSelect
+}
+
+
+})()
+
+
+
+
+
+
+let items = [
+	{text: 'Item 1', value: 10},
+	{text: 'Item 2', value: 20},
+	{text: 'Item 3', value: 30},
+	{text: 'Item 4', value: 40},
+	{text: 'Item 5', value: 50},
+]
+
+
+let cs = new uznaUI.select.customSelect('#custom-select', items)
+
+
+</script>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="content-container">
+<style type="text/css">
+	.ui-slider-container{
+/*			display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 200px;
+		height: 30px;
+*/
+		cursor: pointer;
+		padding: 14px 16px;
+	    border-radius: 50px;
+	    background: #161616;
+	    width: 200px;
+	    user-select: none;
+	}
+	.ui-slider-rail{
+		/*height: 20px;*/
+		height: 8px;
+		border-radius: 20px;
+		width: 100%;
+		position: relative;
+		/*overflow: hidden;*/
+		background-color: #ccc;
+		cursor: pointer;
+		pointer-events: none;
+	}
+	.ui-slider-level{
+		width: var(--level);
+		height: 100%;
+		background-color: #ff2c51;
+		border-radius: 20px;
+		pointer-events: none;
+	}
+	.ui-slider-ball{
+		/*cursor: pointer;*/
+		position: absolute;
+		width: 25px;
+		height: 25px;
+		bottom: 50%;
+		transform: translate(-50%, 50%);
+		background-color: limegreen;
+		left: var(--level);
+		border-radius: 50%;
+		user-select: none;
+		pointer-events: none;
+	}
+</style>
+	
+
+
+<div>
+	<div style="display: flex; align-items: center;">
+		<div id="custom-slider1"></div>
+		<span style="margin-left: 10px; width: 30px" id="custom-slider1-label"></span>
+	</div>
+
+	<div style="display: flex; align-items: center; margin-top: 20px">
+		<div id="custom-slider2"></div>
+		<span style="margin-left: 10px; width: 30px" id="custom-slider2-label"></span>
+	</div>
+		
+</div>
+
+
+
+<script type="text/javascript">
+
+uznaUI.slider = (function(){
+
+	let isDragging = false;
+	let activeSlider;
+
+	function now(){
+		return Date.now ? Date.now() : new Date().getTime();
+	}
+
+	function throttle(func, wait, options) {
+	  var timeout, context, args, result;
+	  var previous = 0;
+	  if (!options) options = {};
+
+	  var later = function() {
+	    previous = options.leading === false ? 0 : now();
+	    timeout = null;
+	    console.log('apply later')
+	    result = func.apply(context, args);
+	    if (!timeout) context = args = null;
+	  };
+
+	  var throttled = function() {
+	  	// console.log('--------------------------throttledthrottledthrottledthrottledthrottledthrottledthrottled')
+	    var _now = now();
+	    if (!previous && options.leading === false) previous = _now;
+	    var remaining = wait - (_now - previous);
+	    context = this;
+	    args = arguments;
+
+	    // console.log('remaining', remaining)
+	    // console.log('wait', wait)
+	    // console.log('_now', _now)
+	    // console.log('previous', previous)
+	    if (remaining <= 0 || remaining > wait) {
+	      if (timeout) {
+	        clearTimeout(timeout);
+	        timeout = null;
+	      }
+	      previous = _now;
+	      console.log('apply INSTA')
+	      result = func.apply(context, args);
+	      if (!timeout) context = args = null;
+	    } else if (!timeout && options.trailing !== false) {
+	    	console.log('setTimeout')
+	      timeout = setTimeout(later, remaining);
+	    }
+	    return result;
+	  };
+
+	  throttled.cancel = function() {
+	    clearTimeout(timeout);
+	    previous = 0;
+	    timeout = context = args = null;
+	  };
+
+	  return throttled;
+	}
+
+	function customSlider(selector, callback){
+		let _this = this;
+		let mount = document.querySelector(selector);
+
+		mount.innerHTML += `
+		<div class="ui-slider-container" style="--level: 20%;">
+			<div class="ui-slider-rail">
+				<div class="ui-slider-level"></div>
+				<div class="ui-slider-ball"></div>
+			</div>
+		</div>`;
+
+		this.sliderContainer = mount.querySelector('.ui-slider-container');
+		this.sliderElement = mount.querySelector('.ui-slider-rail');
+		this.sliderBall = mount.querySelector('.ui-slider-ball');
+		this.callback = throttle(callback, 50);
+
+
+		this.sliderContainer.addEventListener('mousedown', function(event){
+			isDragging = true;
+			_this.sliderBall.focus();
+			let sliderRect = _this.sliderElement.getBoundingClientRect();
+			activeSlider = _this;
+			console.log('_this', _this)
+			_this.setSlider(event.clientX - sliderRect.left);		
+		});
+
+		return this;
+	}
+
+
+
+
+	customSlider.prototype.setSlider = function(offsetX){
+
+		let sliderRect = this.sliderElement.getBoundingClientRect();
+		// console.log('-------------------------');
+		// console.log('offsetX', offsetX);
+		// console.log('sliderRect', sliderRect);
+		// console.log('sliderRect.left', sliderRect.left);
+		// console.log('sliderRect.left + offsetX', sliderRect.left + offsetX);
+		// console.log('sliderRect.right', sliderRect.right);
+
+		let newLeft = sliderRect.left + offsetX;
+
+		if(offsetX < 0){
+			offsetX = 0;
+		}else if(newLeft > sliderRect.right){
+			offsetX = sliderRect.right - sliderRect.left;
+		}
+
+		
+		let ratio = offsetX / sliderRect.width;
+		let percentage = ratio * 100;
+
+		console.log('-------------------------');
+		this.callback(percentage);
+
+		// console.log('percentage', percentage);
+
+
+		this.sliderContainer.style.setProperty('--level', percentage+'%');
+	
+	}
+
+	customSlider.prototype.handleMove = function(event){
+		let sliderRect = this.sliderElement.getBoundingClientRect();
+
+		this.setSlider(event.clientX - sliderRect.left);
+	}	
+
+
+	window.addEventListener('mousemove', function(event){
+		if(!isDragging){
+			return;
+		}
+		activeSlider.handleMove(event);
+	});
+
+	window.addEventListener('mouseup', function(){
+		isDragging = false;
+		activeSlider = null;
+	})
+
+	return {
+		customSlider
+	}
+
+})()
+
+
+let a = new uznaUI.slider.customSlider('#custom-slider1', function(percentage){ 
+	document.querySelector('#custom-slider1-label').innerText = Math.floor(percentage)+'%';
+	console.log(`VALUE_1: ${percentage}`) 
+});
+
+let b = new uznaUI.slider.customSlider('#custom-slider2', function(percentage){ 
+	document.querySelector('#custom-slider2-label').innerText = Math.floor(percentage)+'%';
+	console.log(`VALUE_2: ${percentage}`) 
+})
+
+</script>
+
+</div>
 
 
 
@@ -2821,12 +3880,117 @@ ol, ul {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <script type="text/javascript">
 	
 </script>
 
 
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2988,7 +4152,8 @@ ol, ul {
 
 
 .paginator-progress-loader{
-
+	display: flex;
+    align-items: center;
 }
 .paginator-progress-loader-circle{
     --loader-width: 20px;
@@ -3707,6 +4872,214 @@ let testPagination = new Pagination({
 
 
 
+<div class="content-container">
+
+<style type="text/css">
+
+.slider-frame{
+	position: relative;
+	max-width: 300px;
+	overflow: hidden;
+}
+
+.slider-content{
+	display: inline-flex;
+	/*position: absolute;*/
+	transform: translateX(0);
+	height: 100%;
+	transition: 100ms;
+	transition-property: transform;
+
+}
+
+.slider-item{
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+	border-radius: 8px;
+	background: #222426;
+	margin-right: 12px;
+}
+
+.slider-item-content{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+
+}
+
+.slider-arrow-container{
+	display: flex;
+	height: 100%;
+	top: 0px;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	z-index: 2;
+	fill: red;
+}
+
+.slider-arrow-left{
+	left: 10px;
+}
+
+.slider-arrow-right{
+	right: 10px;
+}
+
+.slider-arrow{
+	border-radius: 50%;
+	background-color: #171717;
+	cursor: pointer;
+	/*pointer-events: none;*/
+	user-select: none;
+}
+
+.slider-arrow:hover{
+	background-color: #464242;
+}
+
+
+/*.slider-arrow:hover{
+
+}
+*/
+</style>
+
+
+<div class="slider-frame">
+
+	<div class="slider-arrow-container slider-arrow-left" style="display: none">
+		<div class="slider-arrow">
+			<svg height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: block; width: 100%; height: 100%;"><path d="M14.96 18.96 8 12l6.96-6.96.71.71L9.41 12l6.25 6.25-.7.71z"></path></svg>
+		</div>
+	</div>
+
+	<div class="slider-content">
+		<div class="slider-item">
+			<div class="slider-item-content">1</div>
+		</div>
+		<div class="slider-item">
+			<div class="slider-item-content">2</div>
+		</div>
+		<div class="slider-item">
+			<div class="slider-item-content">3</div>
+		</div>
+		<div class="slider-item">
+			<div class="slider-item-content">4</div>
+		</div>
+		<div class="slider-item">
+			<div class="slider-item-content">5</div>
+		</div>
+		<div class="slider-item">
+			<div class="slider-item-content">6</div>
+		</div>
+		<div class="slider-item">
+			<div class="slider-item-content">7</div>
+		</div>
+		<div class="slider-item">
+			<div class="slider-item-content">8</div>
+		</div>
+		<div class="slider-item">
+			<div class="slider-item-content">9</div>
+		</div>
+		<div class="slider-item">
+			<div class="slider-item-content">10</div>
+		</div>
+
+	</div>
+
+	<div class="slider-arrow-container slider-arrow-right">
+		<div class="slider-arrow">
+			<svg height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: block; width: 100%; height: 100%;"><path d="m9.4 18.4-.7-.7 5.6-5.6-5.7-5.7.7-.7 6.4 6.4-6.3 6.3z"></path></svg>
+		</div>
+	</div>
+
+</div>
+
+
+<script type="text/javascript">
+
+document.querySelectorAll('.slider-arrow').forEach(function(slider_button){
+	slider_button.addEventListener('click', function(e){
+		let side = e.currentTarget.closest('.slider-arrow-container').classList.contains('slider-arrow-left') ? 'left' : 'right';
+		slideHorizontallyTo(side, e.currentTarget);
+	})
+});
+
+function slideHorizontallyTo(side, element){
+	let frame = element.closest('.slider-frame');
+	let container = frame.querySelector('.slider-content');
+
+	let step = 220; // hardcoded
+
+	let availableTransformSpace = container.clientWidth - frame.clientWidth;
+
+	let style = window.getComputedStyle(container);
+	let matrix = new WebKitCSSMatrix(style.transform);
+	// cross browser matrix
+	// const matrix = new DOMMatrixReadOnly(style.transform)
+
+
+	let transformX = matrix.m41;
+
+	if(side === 'right'){
+		doTheStep(-step, container, transformX, availableTransformSpace);
+	}else{
+		doTheStep(step, container, transformX, availableTransformSpace);
+	}
+}
+
+function doTheStep(step, container, transformX, availableTransformSpace){
+	let slideValue = transformX + step;
+
+	if(Math.abs(slideValue) >= availableTransformSpace){
+		container.style.transform = `translateX(${-availableTransformSpace}px)`;
+		hideArrow(container, 'right');
+		return;
+	}else if(slideValue >= 0){
+		container.style.transform = `translateX(0px)`;
+		hideArrow(container, 'left');
+		return;
+	}
+
+	showArrows(container);
+
+	container.style.transform = `translateX(${slideValue}px)`;
+}
+
+function hideArrow(container, side){
+	container.closest('.slider-frame').querySelector(`.slider-arrow-${side}`).style.display = 'none';
+}
+
+function showArrows(container){
+	let sliderFrame = container.closest('.slider-frame');
+	sliderFrame.querySelector(`.slider-arrow-left`).style.display = 'flex';
+	sliderFrame.querySelector(`.slider-arrow-right`).style.display = 'flex';
+}
+
+
+</script>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -3721,77 +5094,15 @@ let testPagination = new Pagination({
 
 		<div class="content-container">
 			<style type="text/css">
-				.hover-button {
-				    align-items: center;
-				    border: none;
-				    display: inline-flex;
-				    justify-content: center;
-				    outline: none;
-				    position: relative;
-				    z-index: 0;
-				    -webkit-font-smoothing: antialiased;
-				    font-family: "Google Sans",Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
-				    font-size: .875rem;
-				    letter-spacing: normal;
-				    background: none;
-				    border-radius: 4px;
-				    box-sizing: border-box;
-				    color: #444746;
-				    cursor: pointer;
-				    font-weight: 500;
-				    height: 36px;
-				    outline: none;
-				    color: #8ab4f8;
-				    margin-left: 8px;
-				    min-width: auto;
-				    padding: 0 8px;
-				    text-decoration: none;
-				}
-				.hover-button:before{
-				    content: "";
-				    display: block;
-				    opacity: 0;
-				    position: absolute;
-				    transition-duration: .15s;
-				    transition-timing-function: cubic-bezier(0.4,0,0.2,1);
-				    z-index: -1;
-				    bottom: 0;
-				    left: 0;
-				    right: 0;
-				    top: 0;
-				    background: #8ab4f8;
-				    border-radius: 4px;
-				    transform: scale(0);
-				    transition-property: transform,opacity;
-				}
-				.hover-button:hover:before{
-					transform: scale(1);
-					opacity: 0.2;
-				}
-				.hover-button:active:before{
-					transform: scale(1);
-					opacity: 0.3;
-				}
-				.fullscreen-button:hover{
-
-				}
-			</style>
-			<div>
-				<span class="hover-button">Hover Button</span>
-			</div>
-		</div>
-
-
-
-
-
-
-				<div class="content-container">
-			<style type="text/css">
 				#settings-window{
 					background: rgba(28,28,28,.9);
 					padding: 8px 0px;
 					border-radius: 2px;
+				}
+				#settings-window[aria-hidden="true"]{
+					opacity: 0;
+				    -webkit-transition: opacity .1s cubic-bezier(.4,0,1,1);
+				    transition: opacity .1s cubic-bezier(.4,0,1,1);
 				}
 				#click-settings{
 				    background: rgb(0 0 0 / 20%);
@@ -3816,9 +5127,13 @@ let testPagination = new Pagination({
 				}
 				.setting-text{
 					line-height: 40px;
+					flex: 1;
 				}
 				.setting-status{
 					padding: 0 15px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
 				}
 				.setting-status div{
 					width: 24px;
@@ -3845,11 +5160,14 @@ let testPagination = new Pagination({
 								console.log('action: function(){');
 								console.log('media.loop', media.loop);
 								console.log('loopState', loopState);
+								console.log('this', this)
 								if(typeof media.loop === 'boolean'){
 									loopState = !media.loop;
 									media.loop = loopState
+									this.status = !this.status;
 								}else{
 									loopState = !loopState;
+									this.status = !this.status;
 									media.addEventListener('ended', function(){
 										if(loopState){
 											media.currentTime = 0;
@@ -3865,27 +5183,29 @@ let testPagination = new Pagination({
 								hideSettings();
 							}
 						},
-						// {
-						// 	icon: `<svg height="24" viewBox="0 0 36 36" width="24"><path d="M5.85 18.0c0.0-2.56 2.08-4.65 4.65-4.65h6.0V10.5H10.5c-4.14 .0-7.5 3.36-7.5 7.5s3.36 7.5 7.5 7.5h6.0v-2.85H10.5c-2.56 .0-4.65-2.08-4.65-4.65zM12.0 19.5h12.0v-3.0H12.0v3.0zm13.5-9.0h-6.0v2.85h6.0c2.56 .0 4.65 2.08 4.65 4.65s-2.08 4.65-4.65 4.65h-6.0V25.5h6.0c4.14 .0 7.5-3.36 7.5-7.5s-3.36-7.5-7.5-7.5z" fill="#fff"></path></svg>`,
-						// 	text: 'Setting 2',
-						// 	status: null,
-						// },
-						// {
-						// 	icon: `<svg height="24" viewBox="0 0 36 36" width="24"><path d="M5.85 18.0c0.0-2.56 2.08-4.65 4.65-4.65h6.0V10.5H10.5c-4.14 .0-7.5 3.36-7.5 7.5s3.36 7.5 7.5 7.5h6.0v-2.85H10.5c-2.56 .0-4.65-2.08-4.65-4.65zM12.0 19.5h12.0v-3.0H12.0v3.0zm13.5-9.0h-6.0v2.85h6.0c2.56 .0 4.65 2.08 4.65 4.65s-2.08 4.65-4.65 4.65h-6.0V25.5h6.0c4.14 .0 7.5-3.36 7.5-7.5s-3.36-7.5-7.5-7.5z" fill="#fff"></path></svg>`,
-						// 	text: 'Setting 3 TEXT',
-						// 	status: null,
-						// },
+						{
+							icon: `<svg height="24" viewBox="0 0 36 36" width="24"><path d="M5.85 18.0c0.0-2.56 2.08-4.65 4.65-4.65h6.0V10.5H10.5c-4.14 .0-7.5 3.36-7.5 7.5s3.36 7.5 7.5 7.5h6.0v-2.85H10.5c-2.56 .0-4.65-2.08-4.65-4.65zM12.0 19.5h12.0v-3.0H12.0v3.0zm13.5-9.0h-6.0v2.85h6.0c2.56 .0 4.65 2.08 4.65 4.65s-2.08 4.65-4.65 4.65h-6.0V25.5h6.0c4.14 .0 7.5-3.36 7.5-7.5s-3.36-7.5-7.5-7.5z" fill="#fff"></path></svg>`,
+							text: 'Setting 2',
+							status: null,
+						},
+						{
+							icon: `<svg height="24" viewBox="0 0 36 36" width="24"><path d="M5.85 18.0c0.0-2.56 2.08-4.65 4.65-4.65h6.0V10.5H10.5c-4.14 .0-7.5 3.36-7.5 7.5s3.36 7.5 7.5 7.5h6.0v-2.85H10.5c-2.56 .0-4.65-2.08-4.65-4.65zM12.0 19.5h12.0v-3.0H12.0v3.0zm13.5-9.0h-6.0v2.85h6.0c2.56 .0 4.65 2.08 4.65 4.65s-2.08 4.65-4.65 4.65h-6.0V25.5h6.0c4.14 .0 7.5-3.36 7.5-7.5s-3.36-7.5-7.5-7.5z" fill="#fff"></path></svg>`,
+							text: 'Setting 3',
+							status: null,
+						},
 					]
 				];
+
+				let checkedStatusSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" version="1.1"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z" fill="#fff"/></svg>`;
 
 				function renderSettings(settings){
 					let html_content = '';
 					let default_key = 0;
 					settings.forEach(function(setting){
-						html_content += `<div class="setting-item" data-key-${setting.id || default_key}>
+						html_content += `<div class="setting-item" data-key="${setting.id || default_key}">
 											<div class="setting-icon">${setting.icon}</div>
 											<div class="setting-text">${setting.text}</div>
-											<div class="setting-status"><div>${setting.status || ''}</div></div>
+											<div class="setting-status"><div>${setting.status ? checkedStatusSvg : ''}</div></div>
 										</div>`;
 					})
 					default_key++;
@@ -3893,7 +5213,13 @@ let testPagination = new Pagination({
 				}
 
 				function hideSettings(){
-					document.getElementById('settings-window').style.display = 'none';
+					let settingsWindow = document.getElementById('settings-window');
+					settingsWindow.setAttribute('aria-hidden', 'true');
+
+					setTimeout(function(){
+						settingsWindow.style.display = 'none';
+					}, 200)
+					
 				}
 				window.addEventListener('click', function(e){
 
@@ -3920,9 +5246,17 @@ let testPagination = new Pagination({
 							e.preventDefault();
 						}
 						
-						
-						let x = e.pageX;
-						let y = e.pageY;
+						let documentElement = document.documentElement;
+						let x = e.pageX; // + window.pageXOffset - documentElement.clientLeft
+						let y = e.pageY; // + window.pageYOffset - documentElement.clientTop
+
+						console.log('x', x);
+						console.log('y', y);
+						console.log('e', e);
+						console.log('documentElement.clientTop', documentElement.clientTop);
+						console.log('window.pageYOffset', window.pageYOffset);
+						console.log('e.pageY', e.pageY);
+						// console.log(x, y, e, documentElement.clientTop, window.pageYOffset);
 						let id = e.currentTarget.dataset['setting-id'] || 0;
 						let settings = defaultSettings[id];
 
@@ -3939,16 +5273,24 @@ let testPagination = new Pagination({
 							);
 						}
 						let settingsWindow = document.getElementById('settings-window');
+						settingsWindow.setAttribute('aria-hidden', 'false');
 						settingsWindow.style.display = 'block';
+
 						
 						document.getElementById('settings-body').innerHTML = renderSettings(settings);
 
 						if(settingsWindowInitiated){
 							settingsWindow.style.left = x+'px';
 
-							if(settingsWindow.clientHeight + y > document.documentElement.clientHeight){
-								settingsWindow.style.top = 'auto';
-								settingsWindow.style.bottom = '0px';
+							console.log('---------------------------');
+							console.log('settingsWindow.clientHeight', settingsWindow.clientHeight);
+							console.log('y', y);
+							console.log('document.documentElement.clientHeight', document.documentElement.clientHeight);
+							if(settingsWindow.clientHeight + y - window.pageYOffset > document.documentElement.clientHeight){
+								settingsWindow.style.top = window.pageYOffset + (document.documentElement.clientHeight - settingsWindow.clientHeight) + 'px';
+								settingsWindow.style.bottom = 'auto';
+								// settingsWindow.style.top = 'auto';
+								// settingsWindow.style.bottom = '0px';
 							}else{
 								settingsWindow.style.top = y+'px';
 								settingsWindow.style.bottom = 'auto';
@@ -3961,6 +5303,22 @@ let testPagination = new Pagination({
 				
 			</script>
 		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -4183,16 +5541,17 @@ let testPagination = new Pagination({
 
 
 				.controls-shadow{
-					display: none;
+					display: block;
+					/*display: none;*/
 				    position: absolute;
 				    inset: 0px;
 				    pointer-events: none;
 				    background: linear-gradient(0deg,rgba(0,0,0,.8) 0,rgba(0,0,0,.35) 60%,transparent);
 				}
-				.video-controls-layer:hover .controls-shadow{
+/*				.video-controls-layer:hover .controls-shadow{
 					display: block;
 				}
-
+*/
 
 				.settings-container{
 					max-height: 320px;
@@ -4286,6 +5645,8 @@ let testPagination = new Pagination({
 							<!-- <video id="video-player" src="sources/videos/TOKYOPILL - Ｍｅｔａｄａｔａ _ E t h e r e a l (Slowed and reverb).mp4"></video> -->
 							<video id="video-player" src="sources/videos/TOKYOPILL - Metadata - Ethereal (Slowed and reverb).mp4"></video>
 							<!-- <video id="video-player" src="sources/videos/Alien Ant Farm  Smooth Criminal Official Music Video.mp4"></video> -->
+							<!-- <video id="video-player" src="sources/videos/Timelabpro - magic of Hong Kong.mp4"></video> -->
+							
 							<div>
 								<div class="video-controls-layer">
 									<div class="video-controls">
@@ -4643,10 +6004,10 @@ let testPagination = new Pagination({
 
 
 				document.addEventListener("click", function(e){
-					console.log('document.addEventListener click', e);
+					// console.log('document.addEventListener click', e);
 					const clicked_setting = e.target.closest(".setting-item"); // Or any other selector.
 
-					console.log('clicked_setting', clicked_setting);
+					// console.log('clicked_setting', clicked_setting);
 					if(clicked_setting){
 						// e.preventDefault();
 						e.stopPropagation();
@@ -4665,10 +6026,10 @@ let testPagination = new Pagination({
 						// Do something with `target`.
 					}
 
-					console.log('enableSettings', enableSettings);
+					// console.log('enableSettings', enableSettings);
 					if(!enableSettings){
-						console.log("e.target')", e.target);
-						console.log("e.target.closest('#settings-button')", e.target.closest('#settings-button'));
+						// console.log("e.target')", e.target);
+						// console.log("e.target.closest('#settings-button')", e.target.closest('#settings-button'));
 						if(e.target.closest('#settings-button')){
 							toggleSettings();
 						}
@@ -5196,54 +6557,272 @@ let testPagination = new Pagination({
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		<div class="content-container">
-			<div id="tokes-target"></div>
+			<style type="text/css">
+				.app-selector{
+					position: relative;
+					z-index: 999999;
+					font-size: 15px;
+				}
+				.selector-icon{
+				    width: 20px;
+				    height: 20px;
+				    position: absolute;
+				    right: 4px;
+
+				}
+				.selector-button{
+					display: flex;
+					background: #222426;
+					padding: 0 25px 0 18px;
+					border-radius: 2px;
+					height: 48px;
+					display: flex;
+					align-items: center;
+					cursor: pointer;
+					user-select: none;
+				}
+				.selector-options{
+					padding: 8px 0px;
+					position: absolute;
+					top: 100%;
+					left: 0px;
+					display: block;
+					width: 100%;
+					background: #2a2c2e;
+
+					transform-origin: top right;
+					transform: scale(0, 0);
+					overflow: hidden;
+					/*transition: transform 0.1s ease-in-out;*/
+					transition: transform 0.1s cubic-bezier(0.2, 1.06, 0.58, 1);
+				}
+
+				.selector-options.display-selector-options{
+					display: block !important;
+					transform: scale(1, 1);
+					transform-origin: top right;
+				}
+
+				.selector-option{
+					font-size: 14px;
+					
+					padding: 5px 14px;
+					/*z-index: 9999;*/
+					cursor: pointer;
+					min-height: 36px;
+					display: flex;
+					align-items: center;
+				}
+
+
+
+				.selector-option:hover{
+					background: #414447;
+				}
+
+
+				.ripple-button{
+					position: relative;
+					overflow: hidden;
+				}
+				.ripple-circle{
+					position: absolute;
+					border-radius: 50%;
+					/*background: rgba(100, 100, 100, 0.5);*/
+					/*background: rgba(73, 79, 85, 0.5);*/
+					background: rgba(148, 158, 167, 0.5);
+					transform: scale(0);
+					animation: rippleWave 600ms forwards;
+					transition: opacity .8s cubic-bezier(0.42, 0, 0.19, 1.57);
+					pointer-events: none;
+				}
+
+
+
+				@keyframes rippleWave {
+					100% {
+						transform: scale(2);
+					}
+				}
+			</style>
+
+			<div id="tokes-target">
+
+				<div class="app-selector">
+					<div class="selector-button ripple-button">
+						<div class="selector-label">FILTER NAME</div>
+						<div class="selector-icon">
+							<svg viewBox="0 0 24 24" fill="#fff">
+								<path xmlns="http://www.w3.org/2000/svg" d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+							</svg>
+						</div>
+					</div>
+					<div class="selector-options">
+						<div class="selector-option">OPTION 1</div>
+						<div class="selector-option">OPTION 2</div>
+						<div class="selector-option">OPTION 3</div>
+						<div class="selector-option">OPTION 4</div>
+						<div class="selector-option">OPTION 5</div>
+					</div>
+				</div>
+
+			</div>
 			<script type="text/javascript">
 				
+				let filters_open = false;
+				document.querySelector('.selector-button').addEventListener('click', function(e){
+					console.log('.selector-button');
 
-				let obj = [
-					{
-						ChoiceName: "Yes",   // 0
-					},
-					{
-						ChoiceName: "Maybe",  // 1
-					},
-					{
-						ChoiceName: "No",    // 2
-					},
-					{
-						ChoiceName: "FUCK YOU",    // 3
-					},
-					{
-						ChoiceName: "RIPBOZO",    // 4
-					},
-					{
-						ChoiceName: "KILL YOURSELF",    // 5
-					}
-				];
+					filters_open = !filters_open;
+					
+					toggleFilters();
+					
+				});
 
-
-				var index = 0;
-				var length = obj.length;   // 6
-				function up(){
-					if(index - 1 < 0){
-						index = length - 1;
-					}else{
-						index--;
-					}
-					console.log(obj[index].ChoiceName);
+				function toggleFilters(){
+					let options_container = document.querySelector('.selector-options');
+					options_container.classList.toggle('display-selector-options');
 				}
-				function down(){
-					if(index + 1 > length - 1){
-						index = length - 1;
+
+				let rippleButton = document.querySelector('.ripple-button');
+				let rippleTimeout;
+
+				rippleButton.addEventListener('mousedown', function(e){
+					let target = e.currentTarget;
+					let button_rect = target.getBoundingClientRect();
+
+					let x = e.pageX;
+					let y = e.pageY;
+
+
+					let ripple = document.createElement('span');
+					ripple.classList.add('ripple-circle');
+
+					// const diameter = Math.max(target.clientWidth, target.clientHeight);
+					const diameter = Math.sqrt(Math.pow(target.clientWidth, 2) + Math.pow(target.clientHeight, 2));
+
+					const radius = diameter/2;
+
+					ripple.style.width = diameter+'px';
+					ripple.style.height = diameter+'px';
+
+					ripple.style.left = `${e.clientX - button_rect.left - radius}px`;
+					ripple.style.top = `${e.clientY - button_rect.top - radius}px`;
+
+					target.appendChild(ripple);
+
+					// console.log('target', target);
+					// console.log('e', e);
+					// console.log('target.getBoundingClientRect()', target.getBoundingClientRect());
+					// document.querySelector('#absolute').style.left = x+'px';
+					// document.querySelector('#absolute').style.top = y+'px';
+				});
+
+
+				rippleButton.addEventListener('mouseup', function(e){
+					clearRipple(e.currentTarget)
+				})
+
+				rippleButton.addEventListener('mouseleave', function(){
+					clearRipple(rippleButton)
+				})
+
+
+				function clearRipple(target){
+
+					let toRemove = target.querySelector('.ripple-circle:not(.ripple-tagged-to-remove)');
+
+					if(!toRemove){
+						return;
 					}
-					index++;
-					console.log(obj[index].ChoiceName);
+
+					target.querySelector('.ripple-circle:not(.ripple-tagged-to-remove)').classList.add('ripple-tagged-to-remove');
+
+					clearTimeout(rippleTimeout);
+
+					let elements_to_remove = target.querySelectorAll('.ripple-tagged-to-remove');
+
+					elements_to_remove.forEach(function(element){
+						element.style.opacity = 0;
+					})
+					
+					rippleTimeout = setTimeout(function(){
+						console.log('rippleTimeout');
+						let elements_to_remove = target.querySelectorAll('.ripple-tagged-to-remove');
+						elements_to_remove.forEach(function(element){
+							element.remove();
+						})
+						
+					}, 300)
 				}
+
+
+				window.addEventListener('click', function (e) {
+				    if(!e.target.closest('.selector-button') && filters_open){
+				        filters_open = false;
+				        toggleFilters();
+				        // $('.paginator-dropdown').addClass('is-hidden');
+				    }
+				});
 
 
 			</script>
 		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -5709,7 +7288,7 @@ let testPagination = new Pagination({
 				            	<svg class="ic-news">
 				            		<g class="style-scope yt-icon"><path d="M21,6H3V5h18V6z M21,11H3v1h18V11z M21,17H3v1h18V17z" class="style-scope yt-icon"></path></g>
 					            </svg>
-						        NFT
+						        Apps
 						    </a>
 			            </li>
 
@@ -6916,7 +8495,825 @@ let testPagination = new Pagination({
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<div class="content-container">
+			<style type="text/css">
+				.hover-button {
+				    align-items: center;
+				    border: none;
+				    display: inline-flex;
+				    justify-content: center;
+				    outline: none;
+				    position: relative;
+				    z-index: 0;
+				    -webkit-font-smoothing: antialiased;
+				    font-family: "Google Sans",Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+				    font-size: .875rem;
+				    letter-spacing: normal;
+				    background: none;
+				    border-radius: 4px;
+				    box-sizing: border-box;
+				    color: #444746;
+				    cursor: pointer;
+				    font-weight: 500;
+				    height: 36px;
+				    outline: none;
+				    color: #8ab4f8;
+				    margin-left: 8px;
+				    min-width: auto;
+				    padding: 0 8px;
+				    text-decoration: none;
+				}
+				.hover-button:before{
+				    content: "";
+				    display: block;
+				    opacity: 0;
+				    position: absolute;
+				    transition-duration: .15s;
+				    transition-timing-function: cubic-bezier(0.4,0,0.2,1);
+				    z-index: -1;
+				    bottom: 0;
+				    left: 0;
+				    right: 0;
+				    top: 0;
+				    background: #8ab4f8;
+				    border-radius: 4px;
+				    transform: scale(0);
+				    transition-property: transform,opacity;
+				}
+				.hover-button:hover:before{
+					transform: scale(1);
+					opacity: 0.2;
+				}
+				.hover-button:active:before{
+					transform: scale(1);
+					opacity: 0.3;
+				}
+				.fullscreen-button:hover{
+
+				}
+			</style>
+			<div>
+				<span class="hover-button">Hover Button</span>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="content-container">
+	
+<style type="text/css">
+.vt-doc {
+    font-size: 16px;
+    line-height: 1.7;
+
+	--vt-c-brand: var(--vt-c-green);
+	--vt-c-green: #42b883;
+
+	--vt-c-bg-soft: var(--vt-c-black-soft);
+	--vt-c-black-soft: #242424;
+
+	--vt-c-bg-mute: var(--vt-c-black-mute);
+	--vt-c-black-mute: #2f2f2f;
+
+
+	--vt-c-text-1: var(--vt-c-text-dark-1);
+	--vt-c-text-dark-1: rgba(255, 255, 255, .87);
+
+	--vt-c-text-2: var(--vt-c-text-dark-2);
+	--vt-c-text-dark-2: rgba(235, 235, 235, .6);
+
+
+	--vt-c-text-code: var(--vt-c-text-dark-code);
+	--vt-c-text-dark-code: var(--vt-c-indigo-light);
+	--vt-c-indigo-light: #aac8e4;
+
+
+
+}
+
+
+.vt-doc .custom-block {
+    margin: 28px 0;
+    padding: 20px 24px 4px 42px;
+    border-radius: 8px;
+    overflow-x: auto;
+    transition: color .5s,background-color .5s;
+    position: relative;
+    font-size: 14px;
+    line-height: 1.6;
+    font-weight: 500;
+    color: #0000008c;
+    background-color: var(--vt-c-bg-soft);
+}
+
+.vt-doc p{
+	margin: 0;
+}
+
+
+.vt-doc .custom-block .custom-block-title {
+    margin-bottom: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--vt-c-text-1);
+    transition: color .5s;
+}
+
+
+
+.custom-block.tip {
+    border: 1px solid var(--vt-c-brand);
+}
+
+.vt-doc .custom-block.tip:before {
+    color: var(--vt-c-brand);
+}
+
+.vt-doc .custom-block:before {
+    content: "ⓘ";
+    position: absolute;
+    font-weight: 600;
+    font-size: 15px;
+    top: 20px;
+    left: 17px;
+}
+
+.vt-doc .custom-block .custom-block-title {
+    margin-bottom: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--vt-c-text-1);
+    transition: color .5s;
+}
+
+.vt-doc p, .vt-doc ul, .vt-doc ol, .vt-doc summary {
+    margin-bottom: 1.2em;
+}
+
+.vt-doc :not(pre)>code {
+    background-color: var(--vt-c-bg-mute);
+    padding: .15em .5em;
+    border-radius: 4px;
+    color: var(--vt-c-text-code);
+    transition: color .5s,background-color .5s;
+}
+
+.vt-doc .custom-block :not(pre)>code {
+    background-color: #0003;
+}
+
+.vt-doc .custom-block {
+    color: var(--vt-c-text-2);
+}
+
+</style>
+
+
+
+<div class="vt-doc" style="max-width: 680px; margin: 0px 20px">
+
+<div class="options-api"><div class="tip custom-block"><p class="custom-block-title">Note</p><p>Note that props are validated <strong>before</strong> a component instance is created, so instance properties (e.g. <code>data</code>, <code>computed</code>, etc.) will not be available inside <code>default</code> or <code>validator</code> functions.</p></div></div>
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="content-container">
+
+<style type="text/css">
+.faceit-root{
+	--tw-ring-color: rgba(46, 77, 255, .5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    /*box-sizing: border-box;*/
+}
+
+
+.dark\:bg-global:is(.dark *) {
+    background: radial-gradient(75.93% 33.94% at 50% 0, rgba(41, 51, 65, .3) 0, rgba(41, 51, 65, 0) 100%), #161618;
+    background-attachment: fixed;
+}
+
+.dark {
+    --color-default: #29292f;
+    --color-modal-bg: #161618;
+    --color-cal-empty: rgba(20, 23, 28, .5);
+    --color-icon-operational: #50bf61;
+    --color-icon-degraded: #dbc44b;
+    --color-icon-partial-outage: #ff9946;
+    --color-icon-full-outage: #f25533;
+    --color-icon-maintenance: #438dbd;
+}
+
+
+
+.shadow-sm, .shadow-xs {
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+
+.dark\:shadow-none:is(.dark *) {
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+
+
+/*.dark .ContentBox_degradedPerformance__RksoW {
+    background: linear-gradient(125deg, #ee9a8a, #e4e4e7 50%);
+}
+*/
+
+.dark .ContentBox_degradedPerformance__RksoW {
+    background: linear-gradient(125deg, rgba(219, 196, 75, .66), #39393f 80%);
+}
+
+
+.dark .ContentBox_fullOutage__BFJPR {
+    background: linear-gradient(125deg, rgba(242, 85, 51, .66), #39393f 50%);
+}
+
+.dark\:bg-global:is(.dark *) {
+    background: radial-gradient(75.93% 33.94% at 50% 0, rgba(41, 51, 65, .3) 0, rgba(41, 51, 65, 0) 100%), #161618;
+    background-attachment: fixed;
+}
+
+
+.rounded-\[7px\] {
+    border-radius: 7px;
+}
+
+.relative {
+    position: relative;
+}	
+
+.dark .ContentBox_degradedPerformance__RksoW .ContentBox_header__h_V5T {
+    background: linear-gradient(160deg, rgba(219, 196, 75, .2) 0, var(--color-default) 65%);
+}
+
+.text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+.py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
+
+.dark\:text-slate-100:is(.dark *) {
+    --tw-text-opacity: 1;
+    color: rgb(228 228 231 / var(--tw-text-opacity));
+}
+.p-4 {
+    padding: 1rem;
+}
+
+.text-sm {
+    font-size: 14px;
+    line-height: 1.25rem;
+    letter-spacing: -.07px;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.flex {
+    display: flex;
+}
+
+.dark\:text-content-tertiary:is(.dark *) {
+    --tw-text-opacity: 1;
+    color: rgb(149 149 157 / var(--tw-text-opacity));
+}
+
+.tracking-widest {
+    letter-spacing: .1em;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+.text-\[11px\] {
+    font-size: 11px;
+}
+.space-y-3>:not([hidden])~:not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(.75rem* calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(.75rem* var(--tw-space-y-reverse));
+}
+.gap-y-3 {
+    row-gap: .75rem;
+}
+.gap-x-2 {
+    -moz-column-gap: .5rem;
+    column-gap: .5rem;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.dark .ComponentBadge_degradedPerformance__iOGqi {
+    background: rgba(219, 196, 75, .17);
+}
+.text-icon-degraded {
+    color: var(--color-icon-degraded);
+}
+.py-\[6\.5px\] {
+    padding-top: 6.5px;
+    padding-bottom: 6.5px;
+}
+.h-7 {
+    height: 1.75rem;
+}
+.space-x-1\.5>:not([hidden])~:not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(.375rem* var(--tw-space-x-reverse));
+    margin-left: calc(.375rem* calc(1 - var(--tw-space-x-reverse)));
+}
+.break-normal {
+    overflow-wrap: normal;
+    word-break: normal;
+}
+.space-y-4>:not([hidden])~:not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1rem* calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1rem* var(--tw-space-y-reverse));
+}
+.dark\:bg-slate-900:is(.dark *) {
+    --tw-bg-opacity: 1;
+    background-color: rgb(22 22 24 / var(--tw-bg-opacity));
+}
+.w-full {
+    width: 100%;
+}
+.h-px {
+    height: 1px;
+}
+.text-slate-500 {
+    --tw-text-opacity: 1;
+    color: rgb(120 120 130 / var(--tw-text-opacity));
+}
+.space-y-3>:not([hidden])~:not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(.75rem* calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(.75rem* var(--tw-space-y-reverse));
+}
+.p-3\.5 {
+    padding: .875rem;
+}
+.dark\:text-slate-200:is(.dark *) {
+    --tw-text-opacity: 1;
+    color: rgb(202 202 206 / var(--tw-text-opacity));
+}
+.break-words {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+.mb-\[10px\] {
+    margin-bottom: 10px;
+}
+.last\:mb-0:last-child {
+    margin-bottom: 0;
+}
+
+
+.border-transparent {
+    border-color: transparent;
+    border-style: solid;
+}
+.rounded-full {
+    border-radius: 9999px;
+}
+.border {
+    border-width: 1px;
+}
+
+.py-0\.5 {
+    padding-top: .125rem;
+    padding-bottom: .125rem;
+}
+.px-2\.5 {
+    padding-left: .625rem;
+    padding-right: .625rem;
+}
+
+.dark\:hover\:bg-surface-invert\/50:hover:is(.dark *) {
+    background-color: rgba(41,41,47,.5);
+}
+.dark\:hover\:bg-surface-invert\/60:hover:is(.dark *) {
+    background-color: rgba(41,41,47,.6)
+}
+
+.bg-default {
+    background-color: var(--color-default);
+}
+.rounded-lg {
+    border-radius: .5rem;
+}
+.items-center{
+	align-items: center;
+}
+
+.faceit-root a{
+	 text-decoration: none;
+}
+
+.pr-1\.5 {
+    padding-right: .375rem;
+}
+.pl-0\.5 {
+    padding-left: .125rem;
+}
+
+.p-px{
+	padding: 1px;
+}
+
+.rounded-t-\[7px\] {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.ComponentBadge_partialOutage__gzSI1.ComponentBadge_highlighted__9rU3K, .ComponentBadge_partialOutage__gzSI1:hover {
+    border-color: rgba(234, 146, 75, .6);
+}
+.ComponentBadge_degradedPerformance__iOGqi.ComponentBadge_highlighted__9rU3K, .ComponentBadge_degradedPerformance__iOGqi:hover {
+    border-color: rgba(234, 146, 75, .6);
+}
+
+.hover\:cursor-pointer:hover {
+    cursor: pointer;
+}
+
+
+
+.transition {
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .15s;
+}
+
+
+</style>
+
+<div class="dark faceit-root">
+	<div class="dark:bg-global" style="padding: 80px;">
+		<div class="rounded-lg p-px shadow-sm dark:shadow-none ContentBox_degradedPerformance__RksoW">
+		  <div class="relative rounded-[7px] bg-white dark:bg-global">
+		    <div class="ContentBox_header__h_V5T rounded-t-[7px] text-lg px-4 py-4">
+		      <li class="flex items-center text-content-primary dark:text-slate-50">We’re currently experiencing issues</li>
+		    </div>
+		    <div class="text-content-primary dark:text-slate-100 p-4">
+		      <div class="text-sm">
+		        <div class="space-y-4">
+		          <div class="flex flex-col space-y-3">
+		            <span class="text-content-tertiary dark:text-content-tertiary uppercase font-medium text-[11px] tracking-widest">Currently affected</span>
+		            <div class="flex flex-wrap gap-x-2 gap-y-3">
+		              <div class="" data-state="closed">
+		                <div class="flex items-center rounded-full border space-x-1.5 px-2.5 py-0.5 hover:cursor-pointer text-sm font-medium text-content-primary dark:text-slate-100 transition border-transparent ComponentBadge_degradedPerformance__iOGqi">
+		                  <svg class="h-7 py-[6.5px] text-icon-degraded" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+		                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.13422 2.19165C8.67333 1.27161 7.36032 1.27141 6.89915 2.19124L6.89914 2.19125L1.63614 12.6883L0.965694 12.3521L1.63614 12.6883C1.2194 13.5194 1.82373 14.4985 2.75356 14.4985H13.2748C14.2044 14.4985 14.8087 13.5198 14.3924 12.6887L14.3924 12.6887L9.13423 2.19166L9.13422 2.19165ZM5.55824 1.51894C6.57287 -0.504757 9.46145 -0.504181 10.4754 1.51983L10.4754 1.51984L15.7336 12.0169L15.7336 12.0169C16.6495 13.8454 15.32 15.9985 13.2748 15.9985H2.75356C0.707937 15.9985 -0.621611 13.8446 0.295244 12.016L5.55824 1.51895L5.55824 1.51894ZM8.01342 4.99851C8.56571 4.99851 9.01342 5.44623 9.01342 5.99851V7.99851C9.01342 8.5508 8.56571 8.99851 8.01342 8.99851C7.46114 8.99851 7.01342 8.5508 7.01342 7.99851V5.99851C7.01342 5.44623 7.46114 4.99851 8.01342 4.99851ZM9.01342 11.9985C9.01342 12.5508 8.56571 12.9985 8.01342 12.9985C7.46114 12.9985 7.01342 12.5508 7.01342 11.9985C7.01342 11.4462 7.46114 10.9985 8.01342 10.9985C8.56571 10.9985 9.01342 11.4462 9.01342 11.9985Z" fill="currentColor"></path>
+		                  </svg>
+		                  <span class="md:whitespace-nowrap break-normal">Anti Cheat</span>
+		                </div>
+		              </div>
+		            </div>
+		          </div>
+		          <div class="w-full h-px bg-surface-secondary dark:bg-slate-900"></div>
+		          <div class="flex flex-col space-y-3">
+		            <span class="text-slate-500 uppercase font-medium text-[11px] tracking-widest">Live incidents</span>
+		            <div class="w-auto rounded-lg bg-default border border-transparent hover:bg-surface-tertiary/40 dark:hover:bg-surface-invert/60 transition">
+		              <a class="p-3.5 flex flex-col space-y-3 w-full" href="#">
+		              	<!-- href="/incidents/01J4VPH0F30JBH0A1BVH0HN64H" -->
+		                <div class="flex items-center text-slate-900 dark:text-slate-200 font-medium">
+		                  <div class="" data-state="closed">
+		                    <svg class="h-7 py-[6.5px] pl-0.5 pr-1.5 text-icon-degraded" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+		                      <path fill-rule="evenodd" clip-rule="evenodd" d="M9.13422 2.19165C8.67333 1.27161 7.36032 1.27141 6.89915 2.19124L6.89914 2.19125L1.63614 12.6883L0.965694 12.3521L1.63614 12.6883C1.2194 13.5194 1.82373 14.4985 2.75356 14.4985H13.2748C14.2044 14.4985 14.8087 13.5198 14.3924 12.6887L14.3924 12.6887L9.13423 2.19166L9.13422 2.19165ZM5.55824 1.51894C6.57287 -0.504757 9.46145 -0.504181 10.4754 1.51983L10.4754 1.51984L15.7336 12.0169L15.7336 12.0169C16.6495 13.8454 15.32 15.9985 13.2748 15.9985H2.75356C0.707937 15.9985 -0.621611 13.8446 0.295244 12.016L5.55824 1.51895L5.55824 1.51894ZM8.01342 4.99851C8.56571 4.99851 9.01342 5.44623 9.01342 5.99851V7.99851C9.01342 8.5508 8.56571 8.99851 8.01342 8.99851C7.46114 8.99851 7.01342 8.5508 7.01342 7.99851V5.99851C7.01342 5.44623 7.46114 4.99851 8.01342 4.99851ZM9.01342 11.9985C9.01342 12.5508 8.56571 12.9985 8.01342 12.9985C7.46114 12.9985 7.01342 12.5508 7.01342 11.9985C7.01342 11.4462 7.46114 10.9985 8.01342 10.9985C8.56571 10.9985 9.01342 11.4462 9.01342 11.9985Z" fill="currentColor"></path>
+		                    </svg>
+		                  </div>CS2 - Anti-cheat client connectivity issues
+		                </div>
+		                <div class="text-slate-900 dark:text-slate-200 font-normal">
+		                  <div class="break-words">
+		                    <div>
+		                      <p class="mb-[10px] last:mb-0">
+		                        <span class="">We are aware of issues with users being disconnected from the Anti-cheat client and are looking into it.</span>
+		                      </p>
+		                    </div>
+		                  </div>
+		                </div>
+		                <div class="text-slate-500">
+		                  <span>Investigating</span>
+		                  <span class="px-1.5">
+		                    <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-slate-400 dark:text-slate-600 mt-[-2px] inline">
+		                      <circle cx="2" cy="2" r="1.5" fill="currentColor"></circle>
+		                    </svg>
+		                  </span>
+		                  <div class="inline" data-state="closed">
+		                    <span>Ongoing for <var duration="">16</var>m </span>
+		                  </div>
+		                  <span class="px-1.5">
+		                    <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-slate-400 dark:text-slate-600 mt-[-2px] inline">
+		                      <circle cx="2" cy="2" r="1.5" fill="currentColor"></circle>
+		                    </svg>
+		                  </span>
+		                  <span>Affects Anti Cheat</span>
+		                </div>
+		              </a>
+		            </div>
+		          </div>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+		</div>
 	</div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="content-container">
+	<div style="padding: 40px;width: 700px;">
+	  <svg role="img" aria-label="Loading interface..." viewBox="0 0 940 260" preserveAspectRatio="none" style="
+	">
+	    <title>Loading interface...</title>
+	    <rect x="0" y="0" width="940" height="260" clip-path="url(#ll8yh2xakmj)" style="fill: url(&quot;#6vd3r3x8jsg&quot;);"></rect>
+	    <defs>
+	      <clipPath id="ll8yh2xakmj">
+	        <rect x="0" y="0" rx="3" ry="3" width="627" height="24"></rect>
+	        <rect x="0" y="29" rx="3" ry="3" width="506" height="24"></rect>
+	        <rect x="0" y="77" rx="3" ry="3" width="590" height="16"></rect>
+	        <rect x="0" y="100" rx="3" ry="3" width="627" height="16"></rect>
+	        <rect x="0" y="123" rx="3" ry="3" width="480" height="16"></rect>
+	        <rect x="0" y="187" rx="3" ry="3" width="370" height="16"></rect>
+	        <circle cx="18" cy="239" r="18"></circle>
+	        <rect x="46" y="217" rx="3" ry="3" width="548" height="42"></rect>
+	        <rect x="683" y="3" rx="3" ry="3" width="135" height="14"></rect>
+	        <rect x="683" y="33" rx="3" ry="3" width="251" height="24"></rect>
+	        <rect x="683" y="90" rx="3" ry="3" width="135" height="14"></rect>
+	        <rect x="683" y="120" rx="3" ry="3" width="251" height="24"></rect>
+	        <rect x="683" y="177" rx="3" ry="3" width="135" height="14"></rect>
+	        <rect x="683" y="207" rx="3" ry="3" width="251" height="24"></rect>
+	      </clipPath>
+	      <linearGradient id="6vd3r3x8jsg">
+	        <stop offset="0%" stop-color="#f3f3f3" stop-opacity="1" style="
+	    /* stop-color: blue; */
+	">
+	          <animate attributeName="offset" values="-2; -2; 1" keyTimes="0; 0.25; 1" dur="2s" repeatCount="indefinite"></animate>
+	        </stop>
+	        <stop offset="50%" stop-color="#ecebeb" stop-opacity="1" style="
+	    stop-color: #8b8b8b;
+	">
+	          <animate attributeName="offset" values="-1; -1; 2" keyTimes="0; 0.25; 1" dur="2s" repeatCount="indefinite"></animate>
+	        </stop>
+	        <stop offset="100%" stop-color="#f3f3f3" stop-opacity="1" style="
+	    /* stop-color: green; */
+	">
+	          <animate attributeName="offset" values="0; 0; 3" keyTimes="0; 0.25; 1" dur="2s" repeatCount="indefinite"></animate>
+	        </stop>
+	      </linearGradient>
+	    </defs>
+	  </svg>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
 
 </div>
 
@@ -6939,7 +9336,7 @@ let testPagination = new Pagination({
 </div>
 
 
-<div id="absolute" style="position: absolute; left: 0; top: 0; width: 18px; height: 18px; border-radius: 8px; background-color: blue; opacity: 0.5"></div>
+<div id="absolute" style="position: absolute; left: 0; top: 0; width: 18px; height: 18px; border-radius: 8px; background-color: blue; opacity: 0.5; z-index: 999999999"></div>
 
 
 <script type="text/javascript">
@@ -7725,6 +10122,46 @@ $(document).on('mouseout', '.has-tooltip2', function(e) {
 });
 
 
+
+
+
+
+
+
+
+
+
+
+function cumulativePosition(selector){
+    let x = 0; 
+    let y = 0;
+    let elm = document.querySelector(selector);
+
+    do{
+        console.log('-------------');
+        console.log('elm', elm);
+        console.log('elm.offsetLeft', elm?.offsetLeft);
+        console.log('elm.offsetTop', elm?.offsetTop);
+        
+        x += elm.offsetLeft || 0;
+        y += elm.offsetTop || 0;
+        elm = elm.offsetParent;
+        
+        console.log('x', x);
+        console.log('y', y);
+        
+    }while(elm);
+}
+
+
+
+
+function pos(x, y){
+	let $absolute = document.querySelector('#absolute');
+
+	$absolute.style.left = x+'px';
+	$absolute.style.top = y+'px';
+}
 
 </script>
 
